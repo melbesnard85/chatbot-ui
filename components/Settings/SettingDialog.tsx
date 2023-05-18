@@ -83,8 +83,8 @@ export const SettingDialog: FC<Props> = ({ open, onClose }) => {
                 dispatch({ field: 'theme', value: event.target.value })
               }
             >
-              <option value="dark">{t('Dark mode')}</option>
-              <option value="light">{t('Light mode')}</option>
+              <option value="dark" style={{ fontSize: '16px', backgroundColor: 'black' }}>{t('Dark mode')}</option>
+              <option value="light" style={{ fontSize: '16px', color: 'black', backgroundColor: 'white' }}>{t('Light mode')}</option>
             </select>
 
             <button
